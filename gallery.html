@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostyPR - Gallery</title>
+    <meta name="description" content="Check out GhostyPR's photo gallery featuring stream highlights, events, and fan art.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Ghosty<span>PR</span></h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="streams.html">Streams</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+        </div>
+    </section>
+
+    <section class="gallery-intro">
+        <div class="container">
+            <div class="gallery-categories">
+                <button class="category-btn active" data-category="all">All Photos</button>
+                <button class="category-btn" data-category="streams">Stream Highlights</button>
+                <button class="category-btn" data-category="events">Events</button>
+                <button class="category-btn" data-category="fanart">Fan Art</button>
+                <button class="category-btn" data-category="setup">Setup</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="video-search">
+                <input type="text" id="gallery-search" placeholder="Search gallery...">
+                <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <!-- Gallery will be populated with images -->
+            <div class="gallery-container">
+                <!-- This is a placeholder. In a real implementation, you would have actual images -->
+                <div class="gallery-item" data-category="streams">
+                    <img src="images/placeholder-1.jpg" alt="Stream Highlight">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Epic Boss Battle</h3>
+                            <p>Defeating the final boss in Elden Ring</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/placeholder-2.jpg" alt="Gaming Convention">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>PAX East 2023</h3>
+                            <p>Meeting fans at the convention</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fanart">
+                    <img src="images/placeholder-3.jpg" alt="Fan Art">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Ghost Character Art</h3>
+                            <p>Amazing fan art by @artist_username</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="setup">
+                    <img src="images/placeholder-4.jpg" alt="Gaming Setup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>My Gaming Setup</h3>
+                            <p>Updated streaming station for 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="streams">
+                    <img src="images/placeholder-1.jpg" alt="Stream Highlight">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Victory Royale</h3>
+                            <p>Clutch win in Fortnite</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fanart">
+                    <img src="images/placeholder-3.jpg" alt="Fan Art">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Digital Portrait</h3>
+                            <p>Created by @another_artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Submission Section -->
+    <section class="fan-submission">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Submit Your Fan Art</h2>
+            <p class="section-desc">Created something awesome? I'd love to feature it in my gallery!</p>
+            
+            <form class="submission-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="social">Social Media Handle (optional)</label>
+                    <input type="text" id="social" name="social">
+                </div>
+                
+                <div class="form-group">
+                    <label for="file">Upload Your Image</label>
+                    <input type="file" id="file" name="file" accept="image/*" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">Submit Fan Art</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ghosty<span>PR</span></h3>
+                    <p>Professional game streamer bringing you the best gaming content, tutorials, and entertainment.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>For business inquiries:</p>
+                    <p><a href="mailto:contact@ghostypr.com">contact@ghostypr.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.twitch.tv/ghostypr" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+                        <a href="https://www.youtube.com/@_GhostyPR" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/ghosty.pr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_ghostypr?is_from_webapp=1&sender_device=pc" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://discord.gg/6wuvueytYh" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GhostyPR. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>

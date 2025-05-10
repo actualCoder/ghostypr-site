@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostyPR - Videos & Content</title>
+    <meta name="description" content="Watch GhostyPR's latest streams, highlights, and video content.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Ghosty<span>PR</span></h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="streams.html" class="active">Streams</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Streams & Videos</h1>
+        </div>
+    </section>
+
+    <section class="video-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Videos</button>
+                <button class="tab-btn" data-category="highlights">Highlights</button>
+                <button class="tab-btn" data-category="full-streams">Full Streams</button>
+                <button class="tab-btn" data-category="tutorials">Tutorials</button>
+                <button class="tab-btn" data-category="vlogs">Vlogs</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-gallery">
+        <div class="container">
+            <div class="video-search">
+                <input type="text" id="video-search" placeholder="Search videos...">
+                <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card" data-category="highlights">
+                    <div class="thumbnail">
+                        <img src="images/video-1.jpg" alt="Video thumbnail">
+                        <span class="duration">15:42</span>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Epic Boss Battle in Elden Ring</h3>
+                        <p class="video-desc">Watch as I defeat the hardest boss in Elden Ring with no damage taken!</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> May 15, 2023</span>
+                            <span class="video-views"><i class="far fa-eye"></i> 245K views</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag">Elden Ring</span>
+                            <span class="tag">Boss Fight</span>
+                            <span class="tag">No Damage</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-card" data-category="full-streams">
+                    <div class="thumbnail">
+                        <img src="images/video-2.jpg" alt="Video thumbnail">
+                        <span class="duration">3:24:15</span>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Minecraft Hardcore Mode - Day 50</h3>
+                        <p class="video-desc">Building our mega base and exploring the new cave update!</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> May 10, 2023</span>
+                            <span class="video-views"><i class="far fa-eye"></i> 178K views</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag">Minecraft</span>
+                            <span class="tag">Hardcore</span>
+                            <span class="tag">Building</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-card" data-category="tutorials">
+                    <div class="thumbnail">
+                        <img src="images/video-3.jpg" alt="Video thumbnail">
+                        <span class="duration">22:18</span>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Fortnite Pro Tips - How to Win Every Build Battle</h3>
+                        <p class="video-desc">Learn advanced building techniques to dominate in Fortnite!</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> May 5, 2023</span>
+                            <span class="video-views"><i class="far fa-eye"></i> 312K views</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag">Fortnite</span>
+                            <span class="tag">Tutorial</span>
+                            <span class="tag">Pro Tips</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 4 -->
+                <div class="video-card" data-category="vlogs">
+                    <div class="thumbnail">
+                        <img src="images/video-4.jpg" alt="Video thumbnail">
+                        <span class="duration">18:45</span>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>My New Gaming Setup Tour 2023</h3>
+                        <p class="video-desc">Check out my completely upgraded streaming and gaming setup!</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> April 28, 2023</span>
+                            <span class="video-views"><i class="far fa-eye"></i> 425K views</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag">Setup Tour</span>
+                            <span class="tag">Gaming Gear</span>
+                            <span class="tag">Vlog</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 5 -->
+                <div class="video-card" data-category="highlights">
+                    <div class="thumbnail">
+                        <img src="images/video-5.jpg" alt="Video thumbnail">
+                        <span class="duration">12:37</span>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Call of Duty Warzone - 30 Kill Victory</h3>
+                        <p class="video-desc">My personal best in Warzone with an insane final circle clutch!</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> April 22, 2023</span>
+                            <span class="video-views"><i class="far fa-eye"></i> 287K views</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag">Call of Duty</span>
+                            <span class="tag">Warzone</span>
+                            <span class="tag">Victory</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 6 -->
+                <div class="video-card" data-category="full-streams">
+                    <div class="thumbnail">
+                        <img src="images/video-6.jpg" alt="Video thumbnail">
+                        <span class="duration">4:12:08</span>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Resident Evil 4 Remake - Full Playthrough Part 1</h3>
+                        <p class="video-desc">Starting our journey through the remake of this horror classic!</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> April 15, 2023</span>
+                            <span class="video-views"><i class="far fa-eye"></i> 198K views</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag">Resident Evil</span>
+                            <span class="tag">Horror</span>
+                            <span class="tag">Playthrough</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-banner">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2>Never Miss a Stream</h2>
+                <p>Subscribe to my YouTube channel and follow on Twitch to get notified when I go live!</p>
+                <div class="subscribe-buttons">
+                    <a href="https://www.tiktok.com/@_ghostypr?is_from_webapp=1&sender_device=pc" class="btn btn-tiktok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i> Follow on TikTok</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ghosty<span>PR</span></h3>
+                    <p>Professional game streamer bringing you the best gaming content, tutorials, and entertainment.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>For business inquiries:</p>
+                    <p><a href="mailto:contact@ghostypr.com">contact@ghostypr.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.twitch.tv/ghostypr" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+                        <a href="https://www.youtube.com/@_GhostyPR" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/ghosty.pr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_ghostypr?is_from_webapp=1&sender_device=pc" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://discord.gg/6wuvueytYh" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GhostyPR. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

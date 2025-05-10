@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostyPR - Home</title>
+    <meta name="description" content="Official website of GhostyPR, your favorite game streamer featuring live streams, highlights, schedule and more!">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="icon.png" alt="Ghost Icon" class="ghost-icon floating-ghost">
+                <h1>Ghosty<span>PR</span></h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="streams.html">Streams</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html" class="admin-link">Admin</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to <span class="highlight ghost-accent">GhostyPR's</span> Official Website</h2>
+                <p>Join me on epic gaming adventures, live streams, and exclusive content!</p>
+                <div class="cta-buttons">
+                    <a href="#live-now" class="btn btn-primary">Watch Live</a>
+                    <a href="schedule.html" class="btn btn-secondary">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="live-now" class="live-stream">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Live Stream</h2>
+            <div class="stream-container">
+                <div class="stream-embed">
+                    <!-- This section will change based on whether GhostyPR is live or not -->
+                    <div id="stream-status-container">
+                        <!-- Default offline state - will be updated by JavaScript -->
+                        <div class="placeholder-stream">
+                            <i class="fas fa-play-circle ghost-pulse" style="color: var(--primary-color);"></i>
+                            <p>Stream Offline</p>
+                            <p class="small">Check back during scheduled stream times!</p>
+                            <img src="icon.png" alt="Ghost Icon" class="ghost-icon floating-ghost" style="margin: 15px auto; opacity: 0.5;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-videos">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Latest Highlights</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="images/placeholder-1.jpg" alt="Video thumbnail">
+                        <span class="duration">12:34</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Epic Boss Battle in Elden Ring</h3>
+                        <p class="video-date">Posted 2 days ago</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="images/placeholder-2.jpg" alt="Video thumbnail">
+                        <span class="duration">8:47</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Fortnite Victory Royale Clutch</h3>
+                        <p class="video-date">Posted 5 days ago</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="images/placeholder-3.jpg" alt="Video thumbnail">
+                        <span class="duration">15:21</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Minecraft Hardcore Mode Survival</h3>
+                        <p class="video-date">Posted 1 week ago</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="images/placeholder-4.jpg" alt="Video thumbnail">
+                        <span class="duration">10:05</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Call of Duty Warzone Best Moments</h3>
+                        <p class="video-date">Posted 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="streams.html" class="btn btn-secondary">View All Videos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-preview">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Upcoming Streams</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="day ghost-glow">Monday</div>
+                    <div class="game">Elden Ring</div>
+                    <div class="time">8:00 PM - 11:00 PM EST</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="day ghost-glow">Wednesday</div>
+                    <div class="game">Fortnite with Subscribers</div>
+                    <div class="time">7:00 PM - 10:00 PM EST</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="day ghost-glow">Friday</div>
+                    <div class="game">Minecraft Hardcore</div>
+                    <div class="time">9:00 PM - 1:00 AM EST</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="day ghost-glow">Saturday</div>
+                    <div class="game">Random Games & Chill</div>
+                    <div class="time">3:00 PM - 7:00 PM EST</div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="schedule.html" class="btn btn-secondary">Full Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-feed">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Social Media</h2>
+            <div class="social-icons">
+                <a href="https://www.twitch.tv/ghostypr" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.youtube.com/@_GhostyPR" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ghosty.pr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@_ghostypr?is_from_webapp=1&sender_device=pc" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                <a href="https://discord.gg/6wuvueytYh" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="social-updates">
+                <h3>Latest Updates</h3>
+                <div class="update">
+                    <p>Going live in 30 minutes with some Elden Ring! Come hang out! #gaming #eldenring #livestream</p>
+                    <span class="update-time">2 hours ago</span>
+                </div>
+                <div class="update">
+                    <p>Just uploaded a new video! Check out my latest Fortnite highlights on YouTube! #fortnite #gaming #highlights</p>
+                    <span class="update-time">Yesterday</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="merch-preview">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Featured Merch</h2>
+            <div class="merch-grid">
+                <div class="merch-item">
+                    <img src="images/merch-1.jpg" alt="GhostyPR T-Shirt">
+                    <h3>GhostyPR Logo Tee</h3>
+                    <p class="price">$24.99</p>
+                    <a href="merch.html" class="btn btn-small">Shop Now</a>
+                </div>
+                <div class="merch-item">
+                    <img src="images/merch-2.jpg" alt="GhostyPR Hoodie">
+                    <h3>Premium Gaming Hoodie</h3>
+                    <p class="price">$49.99</p>
+                    <a href="merch.html" class="btn btn-small">Shop Now</a>
+                </div>
+                <div class="merch-item">
+                    <img src="images/merch-3.jpg" alt="GhostyPR Mug">
+                    <h3>Gamer Fuel Mug</h3>
+                    <p class="price">$14.99</p>
+                    <a href="merch.html" class="btn btn-small">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title ghost-decorated">Never Miss a Stream</h2>
+            <p>Subscribe to my newsletter for stream notifications, exclusive content, and updates!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ghosty<span style="color: var(--primary-color);">PR</span></h3>
+                    <p>Professional game streamer bringing you the best gaming content, tutorials, and entertainment.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>For business inquiries:</p>
+                    <p><a href="mailto:contact@ghostypr.com" class="ghost-link">contact@ghostypr.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.twitch.tv/ghostypr" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+                        <a href="https://www.youtube.com/@_GhostyPR" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/ghosty.pr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_ghostypr?is_from_webapp=1&sender_device=pc" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://discord.gg/6wuvueytYh" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ghost-footer">
+                <img src="icon.png" alt="Ghost Icon" class="floating-ghost">
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GhostyPR. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!-- This script checks if GhostyPR is currently live streaming on TikTok -->
+<script>
+    // This is a placeholder for TikTok API integration
+    // In a real implementation, you would use the TikTok API to check if the streamer is live
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if stream status has been manually set in the admin dashboard
+        const streamStatusContainer = document.getElementById('stream-status-container');
+        if (streamStatusContainer) {
+            checkStreamStatus();
+        }
+    });
+    
+    // This comment explains what's missing for a real implementation:
+    // TODO: Implement TikTok API integration to automatically check if GhostyPR is live
+    // Currently using localStorage values set by the admin dashboard as a placeholder
+</script>

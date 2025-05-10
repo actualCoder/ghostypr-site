@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostyPR - Admin Dashboard</title>
+    <meta name="description" content="Admin dashboard for GhostyPR's website management">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <div class="admin-login" id="login-section">
+            <div class="login-box">
+                <img src="icon.png" alt="GhostyPR Logo" class="admin-logo">
+                <h2>Admin Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="admin-dashboard" id="dashboard-section" style="display: none;">
+            <header class="admin-header">
+                <div class="admin-logo">
+                    <img src="icon.png" alt="GhostyPR Logo" class="admin-icon">
+                    <h1>GhostyPR <span>Admin Dashboard</span></h1>
+                </div>
+                <div class="admin-user">
+                    <span id="admin-name">Admin</span>
+                    <button id="logout-btn" class="btn btn-small">Logout</button>
+                </div>
+            </header>
+
+            <div class="admin-content">
+                <nav class="admin-sidebar">
+                    <ul class="admin-nav">
+                        <li><a href="#" class="active" data-section="dashboard-home"><i class="fas fa-home"></i> Dashboard</a></li>
+                        <li><a href="#" data-section="stream-status"><i class="fas fa-video"></i> Stream Status</a></li>
+                        <li><a href="#" data-section="schedule-manager"><i class="fas fa-calendar"></i> Schedule</a></li>
+                        <li><a href="#" data-section="content-manager"><i class="fas fa-photo-video"></i> Content</a></li>
+                        <li><a href="#" data-section="merch-manager"><i class="fas fa-tshirt"></i> Merchandise</a></li>
+                        <li><a href="#" data-section="user-messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                        <li><a href="#" data-section="site-settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    </ul>
+                </nav>
+
+                <main class="admin-main">
+                    <!-- Dashboard Home Section -->
+                    <section id="dashboard-home" class="admin-section active">
+                        <h2>Welcome to Your Dashboard</h2>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fas fa-eye"></i></div>
+                                <div class="stat-info">
+                                    <h3>Website Visits</h3>
+                                    <p class="stat-number">1,234</p>
+                                    <p class="stat-period">Last 7 days</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                                <div class="stat-info">
+                                    <h3>New Followers</h3>
+                                    <p class="stat-number">56</p>
+                                    <p class="stat-period">Last 7 days</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
+                                <div class="stat-info">
+                                    <h3>Merch Sales</h3>
+                                    <p class="stat-number">23</p>
+                                    <p class="stat-period">Last 7 days</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fas fa-comment"></i></div>
+                                <div class="stat-info">
+                                    <h3>New Messages</h3>
+                                    <p class="stat-number">12</p>
+                                    <p class="stat-period">Unread</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recent-activity">
+                            <h3>Recent Activity</h3>
+                            <ul class="activity-list">
+                                <li>
+                                    <span class="activity-time">Today, 2:30 PM</span>
+                                    <span class="activity-text">New merchandise order received</span>
+                                </li>
+                                <li>
+                                    <span class="activity-time">Today, 11:15 AM</span>
+                                    <span class="activity-text">Updated stream schedule for next week</span>
+                                </li>
+                                <li>
+                                    <span class="activity-time">Yesterday, 7:45 PM</span>
+                                    <span class="activity-text">Added new video to content library</span>
+                                </li>
+                                <li>
+                                    <span class="activity-time">Yesterday, 3:20 PM</span>
+                                    <span class="activity-text">Received 3 new contact form submissions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Stream Status Section -->
+                    <section id="stream-status" class="admin-section">
+                        <h2>Stream Status Manager</h2>
+                        <div class="stream-status-controls">
+                            <div class="status-toggle">
+                                <h3>Current Stream Status</h3>
+                                <div class="toggle-container">
+                                    <label class="switch">
+                                        <input type="checkbox" id="stream-active-toggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span id="status-label">Offline</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stream-info-form">
+                                <h3>Stream Information</h3>
+                                <form id="stream-info">
+                                    <div class="form-group">
+                                        <label for="stream-title">Stream Title</label>
+                                        <input type="text" id="stream-title" name="stream-title" placeholder="Enter your stream title">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stream-game">Game/Category</label>
+                                        <input type="text" id="stream-game" name="stream-game" placeholder="What are you streaming?">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stream-url">TikTok Stream URL</label>
+                                        <input type="url" id="stream-url" name="stream-url" placeholder="https://www.tiktok.com/@_ghostypr/live">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Update Stream Info</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
